@@ -1,22 +1,23 @@
 //
-//  FirstViewController.m
+//  ThreeViewController.m
 //  NNPageController
 //
 //  Created by public on 15/10/30.
 //  Copyright © 2015年 public. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "ThreeViewController.h"
 
-@interface FirstViewController ()
+@interface ThreeViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation ThreeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor purpleColor];
+    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor orangeColor];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -17,6 +17,7 @@
 		4EE995B61BE308E800B68E76 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE995B51BE308E800B68E76 /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
 		4EE995B91BE30B1300B68E76 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE995B81BE30B1300B68E76 /* FirstViewController.m */; settings = {ASSET_TAGS = (); }; };
 		4EE995BC1BE30B1B00B68E76 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE995BB1BE30B1B00B68E76 /* SecondViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4EE995BF1BE31ED900B68E76 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE995BE1BE31ED900B68E76 /* ThreeViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		4EE995B81BE30B1300B68E76 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		4EE995BA1BE30B1B00B68E76 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		4EE995BB1BE30B1B00B68E76 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		4EE995BD1BE31ED900B68E76 /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		4EE995BE1BE31ED900B68E76 /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				4EE995B81BE30B1300B68E76 /* FirstViewController.m */,
 				4EE995BA1BE30B1B00B68E76 /* SecondViewController.h */,
 				4EE995BB1BE30B1B00B68E76 /* SecondViewController.m */,
+				4EE995BD1BE31ED900B68E76 /* ThreeViewController.h */,
+				4EE995BE1BE31ED900B68E76 /* ThreeViewController.m */,
 				4EE9958A1BE3084400B68E76 /* Main.storyboard */,
 				4EE9958D1BE3084400B68E76 /* Assets.xcassets */,
 				4EE9958F1BE3084400B68E76 /* LaunchScreen.storyboard */,
@@ -286,6 +291,7 @@
 				4EE995BC1BE30B1B00B68E76 /* SecondViewController.m in Sources */,
 				4EE995861BE3084400B68E76 /* AppDelegate.m in Sources */,
 				4EE995B61BE308E800B68E76 /* MainViewController.m in Sources */,
+				4EE995BF1BE31ED900B68E76 /* ThreeViewController.m in Sources */,
 				4EE995831BE3084400B68E76 /* main.m in Sources */,
 				4EE995B91BE30B1300B68E76 /* FirstViewController.m in Sources */,
 			);
@@ -511,6 +517,7 @@
 				4EE995AD1BE3084500B68E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EE995AE1BE3084500B68E76 /* Build configuration list for PBXNativeTarget "NNPageControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +526,7 @@
 				4EE995B01BE3084500B68E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EE995B11BE3084500B68E76 /* Build configuration list for PBXNativeTarget "NNPageControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +535,7 @@
 				4EE995B31BE3084500B68E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
