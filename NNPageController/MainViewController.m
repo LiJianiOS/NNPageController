@@ -36,7 +36,6 @@
  */
 - (NSMutableArray *)viewControllerArray{
     if (!_viewControllerArray) {
-        _viewControllerArray =
         _viewControllerArray = [[NSMutableArray alloc]init];
         FirstViewController *FController = [[FirstViewController alloc]init];
         SecondViewController *SController = [[SecondViewController alloc]init];
