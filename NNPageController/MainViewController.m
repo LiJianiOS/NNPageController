@@ -26,7 +26,7 @@
  */
 - (NSArray *)btnArr{
     if (!_btnArr) {
-        _btnArr =  @[@"iOS",@"交流群",@"390438081"];
+        _btnArr =  @[@"第1个",@"第2个",@"第3个",@"第4个"];
     }
     return _btnArr;
 }
@@ -41,7 +41,9 @@
         FirstViewController *FController = [[FirstViewController alloc]init];
         SecondViewController *SController = [[SecondViewController alloc]init];
         ThreeViewController *TController = [[ThreeViewController alloc]init];
-        [_viewControllerArray addObjectsFromArray:@[FController,SController,TController]];
+        ThreeViewController *TController2 = [[ThreeViewController alloc]init];
+        
+        [_viewControllerArray addObjectsFromArray:@[FController,SController,TController,TController2]];
     }
     return _viewControllerArray;
 }
@@ -76,7 +78,7 @@
         [btn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
         btn.titleLabel.font = [UIFont boldSystemFontOfSize:16];
-        btn.frame = CGRectMake((ScreenSize.width - 3*size.width)/2 + size.width*i+16*i, 40, size.width, size.height);
+        btn.frame = CGRectMake((ScreenSize.width - self.btnArr.count*size.width)/2 + size.width*i+16*i+16, 40, size.width, size.height);
         btn.tag = BtnTag + i;
         if (i == _currentPageIndex) {
             btn.selected = YES;

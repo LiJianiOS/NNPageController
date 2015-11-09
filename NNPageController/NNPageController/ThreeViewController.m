@@ -8,6 +8,10 @@
 
 #import "ThreeViewController.h"
 
+// 颜色
+#define NNColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+// 随机色
+#define NNRandomColor NNColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 @interface ThreeViewController ()
 
 @end
@@ -17,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = NNRandomColor;
 }
 
 - (void)didReceiveMemoryWarning {

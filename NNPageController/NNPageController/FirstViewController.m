@@ -7,6 +7,10 @@
 //
 
 #import "FirstViewController.h"
+// 颜色
+#define NNColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+// 随机色
+#define NNRandomColor NNColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
 @interface FirstViewController ()
 
@@ -16,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor purpleColor];
+    self.view.backgroundColor = NNRandomColor;
 }
 
 - (void)didReceiveMemoryWarning {
