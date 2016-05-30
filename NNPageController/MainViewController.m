@@ -60,7 +60,7 @@
       _pageController.delegate = self;
         _pageController.dataSource = self;
         
-        [_pageController setViewControllers:@[[self.viewControllerArray objectAtIndex:_currentPageIndex]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+        [_pageController setViewControllers:@[[self.viewControllerArray objectAtIndex:_currentPageIndex]] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
 
     }
     return _pageController;
@@ -114,7 +114,7 @@
     NSInteger nowTemp = btn.tag - BtnTag;
     if (nowTemp > tempIndex) {
         for (int i = (int)tempIndex + 1; i <= nowTemp; i ++) {
-            [_pageController setViewControllers:@[[self.viewControllerArray objectAtIndex:i]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:^(BOOL finished) {
+            [_pageController setViewControllers:@[[self.viewControllerArray objectAtIndex:i]] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:^(BOOL finished) {
                 if (finished) {
                     [weakSelf updateCurrentPageIndex:i];
                 }
@@ -122,7 +122,7 @@
         }
     }else if (nowTemp < tempIndex){
         for (int i = (int)tempIndex ; i >= nowTemp; i--) {
-            [_pageController setViewControllers:@[[self.viewControllerArray objectAtIndex:i]] direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:^(BOOL finished) {
+            [_pageController setViewControllers:@[[self.viewControllerArray objectAtIndex:i]] direction:UIPageViewControllerNavigationDirectionReverse animated:NO completion:^(BOOL finished) {
                 if (finished) {
                     [weakSelf updateCurrentPageIndex:i];
                 }
@@ -144,6 +144,14 @@
             otherBtn.selected = NO;
         }
     }
+    
+    [UIView animateWithDuration:0.2 animations:^{
+        UIView *line = (UIView *)[self.view viewWithTag:2000];
+        CGRect sizeRect = line.frame;
+        sizeRect.origin.x = btn.frame.origin.x;
+        line.frame = CGRectMake(btn.frame.origin.x, 64 - 2, btn.frame.size.width, 2);
+    }];
+
 }
 #pragma mark --------Scroll协议-------
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
